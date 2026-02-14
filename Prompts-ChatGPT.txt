@@ -1,0 +1,5 @@
+BIBLIOTECA DE PROMPTS — EXEMPLO
+
+1) "Crie 10 ideias de Reels para [nicho] com gancho forte."
+2) "Escreva uma copy no modelo PAS para [produto] focando em [dor]."
+3) "Monte um plano de 7 dias com CTA para WhatsApp."

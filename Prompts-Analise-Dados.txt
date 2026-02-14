@@ -1,0 +1,4 @@
+PROMPTS PARA ANÁLISE DE DADOS — EXEMPLO
+
+"Analise essas métricas e diga o que priorizar para baixar CPA."
+"Crie hipóteses de teste A/B para criativos e público."

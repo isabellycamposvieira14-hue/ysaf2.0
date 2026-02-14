@@ -1,0 +1,4 @@
+SCRIPTS DE AUTOMAÇÃO — EXEMPLO
+
+Fluxo 1: Captura → Boas-vindas → Pergunta → Oferta → Checkout
+Fluxo 2: Recuperação de carrinho → Lembrete 1 → Lembrete 2 → Bônus

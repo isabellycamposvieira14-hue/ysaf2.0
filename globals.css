@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 250 20% 4%;
+    --foreground: 250 10% 95%;
+    --card: 255 30% 10%;
+    --card-foreground: 250 10% 95%;
+    --popover: 255 30% 10%;
+    --popover-foreground: 250 10% 95%;
+    --primary: 260 100% 59%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 255 25% 14%;
+    --secondary-foreground: 250 10% 90%;
+    --muted: 255 20% 12%;
+    --muted-foreground: 250 10% 55%;
+    --accent: 260 100% 59%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 260 30% 18%;
+    --input: 260 25% 16%;
+    --ring: 260 100% 59%;
+    --chart-1: 260 100% 59%;
+    --chart-2: 280 80% 55%;
+    --chart-3: 240 70% 50%;
+    --chart-4: 300 65% 50%;
+    --chart-5: 320 75% 55%;
+    --radius: 0.75rem;
+    --sidebar-background: 255 30% 7%;
+    --sidebar-foreground: 250 10% 90%;
+    --sidebar-primary: 260 100% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 260 40% 15%;
+    --sidebar-accent-foreground: 250 10% 95%;
+    --sidebar-border: 260 30% 15%;
+    --sidebar-ring: 260 100% 59%;
+    --glow: 260 100% 59%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(250 20% 4%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(260 30% 25%);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(260 100% 59%);
+}
+
+/* Glow animation */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px 0 hsla(260, 100%, 59%, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px 5px hsla(260, 100%, 59%, 0.5);
+  }
+}
+
+@keyframes progress-fill {
+  from {
+    width: 0%;
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+.animate-progress-fill {
+  animation: progress-fill 1.5s ease-out forwards;
+}
